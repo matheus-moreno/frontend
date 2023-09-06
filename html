@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        #contatoInfo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Início</a></li>
+                <li><a href="#" class="nav-link">Portfólio</a></li>
+                <li><a href="#" class="nav-link" id="contatoLink">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1 class="hero-title">Matheus Rezende Moreno</h1>
+            <p class="hero-description">Portfólio Teste Front End.</p>
+            <a href="#" class="cta-button" id="saibaMaisButton">Saiba Mais</a>
+        </section>
+
+        <section id="contatoInfo">
+            <h2 class="content-title">Contato</h2>
+            <p class="content-description">
+                E-mail: matheus_rezendemoreno@hotmail.com<br>
+                Telefone: (55) 11 95332-1998<br>
+                LinkedIn: <a href="https://www.linkedin.com/in/matheus" target="_blank">Matheus LinkedIn</a>
+            </p>
+        </section>
+
+        <section class="content">
+            <h2 class="content-title">Sobre Mim</h2>
+            <p class="content-description">
+                Estudante de Análise e Desenvolvimento de Sistemas, com participação em projeto de Game Jam durante a faculdade. Busco estágio em TI para aplicar conhecimentos acadêmicos e contribuir com a equipe. Comprometido com a organização, busco constantemente aprimorar minhas habilidades e agregar valor ao ambiente de trabalho.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2023 Meu Portfólio</p>
+    </footer>
+
+    <script>
+        // Função para alternar a visibilidade das informações de contato
+        function toggleContatoInfo() {
+            var contatoInfo = document.getElementById("contatoInfo");
+            if (contatoInfo.style.display === "none") {
+                contatoInfo.style.display = "block";
+            } else {
+                contatoInfo.style.display = "none";
+            }
+        }
+
+        // Adiciona um evento de clique ao link "Contato"
+        var contatoLink = document.getElementById("contatoLink");
+        if (contatoLink) {
+            contatoLink.addEventListener("click", toggleContatoInfo);
+        }
+    </script>
+</body>
+</html>
